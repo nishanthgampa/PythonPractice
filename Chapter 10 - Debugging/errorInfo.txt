@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/nishanth/Desktop/All Star/Python/Chapter 10 - Debugging/errorInTextFile.py", line 12, in <module>
+    raise Exception('This is an error message')
+Exception: This is an error message
