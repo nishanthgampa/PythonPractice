@@ -69,20 +69,37 @@ for rowOfCellObjects in sheet['A1':'C3']:
 for i in sheet['B']:
     print(i.value)
 
+pwd()
 
+wb1 = openpyxl.Workbook()
 
+wb1.sheetnames
 
+sheet = wb1['Sheet']
 
+sheet.title = 'This sheet is created via Python'
 
+wb1.save('PythonCreatedSheet.xlsx')
 
+wb1.create_sheet()
 
+wb1.sheetnames
 
+wb1.create_sheet(index = 0, title = 'First Sheet')
 
+wb1.sheetnames
 
+wb1.create_sheet(index = 1, title = 'Second Sheet')
 
+wb1.sheetnames
 
+wb1.remove(wb1['This sheet is created via Python'])
 
+sheet = wb1['First Sheet']
 
+sheet['A1'] = 'Hello World!'
+
+sheet['A1'].value
 
 
 
