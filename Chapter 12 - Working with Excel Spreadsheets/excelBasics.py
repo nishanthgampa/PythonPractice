@@ -101,7 +101,12 @@ sheet['A1'] = 'Hello World!'
 
 sheet['A1'].value
 
+from openpyxl.styles import Font, NamedStyle
 
+italic24Font = Font(size=24, italic = True)
 
+styleObj = NamedStyle(font = italic24Font)
+
+sheet['A1'].NamedStyle = styleObj
 
 
