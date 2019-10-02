@@ -14,6 +14,9 @@ if len(sys.argv) < 2:
 
 location = ' '.join(sys.argv[1:])
 
+location = 'Seattle'
 url ='http://api.openweathermap.org/data/2.5/forecast/daily?q=%s&cnt=3' % (location)
 response = requests.get(url)
 response.raise_for_status()
+
+response.text
